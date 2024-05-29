@@ -277,7 +277,7 @@ position:relative;
     font-size: 32px;
     font-weight:400;
     font-style: normal;
-    color: rgb(156, 110, 77);
+    color: chocolate;
   }
   .subtext{
     font-family: "Faustina", serif;
@@ -285,8 +285,9 @@ position:relative;
     font-weight: 200;
     font-style: normal;
     font-size: 19px;
-    color: chocolate;
+    color:black;
   }
+  
   .card-text {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -435,31 +436,6 @@ position:relative;
       border-radius: 10px;
    }
       
-<<<<<<< HEAD
   
-=======
-  .card img {
-      max-width: 100%;
-      margin-bottom: 20px;
-  }
-  .card h3 {
-      font-size: 1.5em;
-      margin: 10px 0;
-  }
-  .card p {
-      font-size: 1em;
-      color: #555;
-  }
-  .card-text55 {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-      color: gray;
-      margin-left: 20px;
-      margin-right: 20px;
-  }
-
-
->>>>>>> f2729c3e76f2a3b6f16ea9a9840e71de902b0b8e
 
   
