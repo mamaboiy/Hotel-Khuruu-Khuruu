@@ -288,7 +288,7 @@ position:relative;
     font-style: normal;
   }
   .subtext1{
-    font-family: "Faustina", serif;
+    font-family: "poopins", serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
@@ -300,16 +300,16 @@ position:relative;
   .subtext{
     font-family: "poppins", serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 250;
     font-style: normal;
-    font-size: 17px;
+    font-size: 20px;
     color:rgb(0, 0, 0);
   }
 
 
   .card-text {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 15px;
     font-style: normal;
     color: gray;
