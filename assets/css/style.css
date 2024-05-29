@@ -5,7 +5,7 @@
   
   #logo{
       height: 50px;
-      
+
       width: 250px;
   }
   .navbar {
@@ -61,7 +61,7 @@ color: #000; /* Change text color if needed */
 }
 #logoimg{
   width:300px;
-  height: 70px;
+  height: 60px;
   /* margin-left: 30px; */
 }
 
@@ -274,7 +274,7 @@ position:relative;
     font-family: "Faustina", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-size: 32px;
+    font-size: 45px;
     font-weight:400;
     font-style: normal;
     color: chocolate;
@@ -287,16 +287,6 @@ position:relative;
     font-weight:300;
     font-style: normal;
   }
-
-  .subtext{
-    font-family: "Faustina", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 19px;
-    color:black;
-  }
-
   .subtext1{
     font-family: "Faustina", serif;
     font-optical-sizing: auto;
@@ -306,6 +296,17 @@ position:relative;
     color:black;
   }
 
+
+  .subtext{
+    font-family: "poppins", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 17px;
+    color:rgb(0, 0, 0);
+  }
+
+
   .card-text {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -313,6 +314,14 @@ position:relative;
     font-style: normal;
     color: gray;
   }
+  .card-text1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: gray;
+  }
+
 
    
    .card{
