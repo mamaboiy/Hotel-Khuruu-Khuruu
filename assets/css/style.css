@@ -411,7 +411,6 @@ position:relative;
   /* footer */
   .footer{
     background-color: #BAA383; /* White background for better contrast */
-    
     }
  .nav .nav-link{
       /* text-decoration: none; */
@@ -419,10 +418,8 @@ position:relative;
     }
 
 /* events */
-     cheki
-      .button{
-      text-align: center;
-    }
+     /* cheki */
+     
 
     .container3 img {
       width: 100%;
