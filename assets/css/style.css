@@ -422,6 +422,11 @@ position:relative;
   .footer{
     background-color: #BAA383; /* White background for better contrast */
     }
+
+    .nav .nav-link{
+      /* text-decoration: none; */
+      color: #ffffff;
+    }
  
 
 /* events */
