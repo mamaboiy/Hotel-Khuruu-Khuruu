@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Khuruu Khuruu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Shippori+Antique&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Antique&display=swap" rel="stylesheet">
+
+
+
+<!-- animation -->
+
+ 
+</head>
+<body>
+    <!--==================================================-->
+	<!----- Start repeat navi footer Script----->
+	<!--==================================================-->
+
+	<script src="//code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" >
+		//<!-- start navigation -->
+		$.get("nav.html", function(data){
+			$("#navigation").replaceWith(data);
+		});
+
+		// <!-- start footer -->
+		$.get("footer.html", function(data){
+			$("#footer").replaceWith(data);
+		});
+		
+	</script>
+<!--==================================================-->
+	<!----- Start Navigation Area ----->
+	<!--==================================================-->
+	
+	<div id="navigation"></div>
+
+	<!--==================================================-->
+	<!----- End Navigation Area ----->
+	<!--==================================================-->
+
+<!--banner -->
+
+<!--banner -->
+<div class="about">
+  <h1 class="headtext" align="center" style="color: white;">About Us <p><span class="subtext" style="color: white;">All good hotels tend to lead people to do things they wouldn’t necessarily do at home. <br> And we happen to be one of the hotels that offers 5 star services.</span></p></h1>
+</div>
+
+
+
+<!-- anmiation  -->
+
+<div class="container rating my-5 text-center">
+    <div class=" number-container mb-5">
+      <div class="column" data-final-number="20">
+        <div class=" label"><h2><span class="subtext"  style="color:black;">Staffs</span></h2><img id="logos" class="card-title" src="./assets/icons/staff.png" alt=""></div>
+        <div class="card-text number">0</div>
+        
+      </div>
+      <div class="column" data-final-number="15">
+        <div class=" label"><h2><span class="subtext"  style="color:black;">Rooms</span></h2><img id="logos" class="card-title" src="./assets/icons/hotel.png" alt=""></div>
+        <div class="card-text  number">0</div>
+      </div>
+      <div class="column" data-final-number="5000" >
+        <div class=" label"><h2><span class="subtext" style="color:black;">Happy Customers</span></h2><img id="logos" class="card-title" src="./assets/icons/customer.png" alt=""></div>
+        <div class="card-text number">0</div>
+      </div>
+    </div>
+</div>
+
+
+<hr>
+
+<div class="container my-5">
+    <div class="card-text about-us my-5" >
+        <h1 class="headtext">Discover the Essence of Our Location: Where Every Moment Becomes a Memory</h1>
+        <p class="my-5" align="left">
+            
+<!--  The Khuruu Khuruu Hotel gives great packages & offers excellent accommodation, services and facilities to make your stay in Punakha a remarkable journey." -->
+        </p>
+        <div id="map" style="width:100%;height:500px;background-color:#e9ecef;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40016.18575281061!2d89.84573470530695!3d27.563611026049653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e1dd988d3ea2d3%3A0xbbc289b9829ec873!2sHotel%20Khuruu%20Khuruu!5e0!3m2!1sen!2sbt!4v1716349654470!5m2!1sen!2sbt" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>    
+</div>
+ <!--==================================================-->
+	<!----- Start Footer Middle Area ----->
+	<!--==================================================-->
+	
+	<div id="footer"></div>
+
+	<!--==================================================-->
+	<!----- End Footer Middle Area ----->
+	<!--==================================================-->
+  
+    
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+     document.addEventListener('DOMContentLoaded', function() {
+  const numbers = document.querySelectorAll('.number');
+  const columns = document.querySelectorAll('.column');
+
+  // Function to animate each number
+  function animateNumber(numberElement, finalNumber, duration) {
+    const startNumber = parseInt(numberElement.innerText);
+    const increment = (finalNumber - startNumber) / (duration / 10); // Increment every 10ms
+
+    let currentNumber = startNumber;
+    const intervalId = setInterval(() => {
+      currentNumber += increment;
+      numberElement.innerText = Math.round(currentNumber);
+
+      if (currentNumber >= finalNumber) {
+        clearInterval(intervalId);
+        numberElement.innerText = finalNumber;
+      }
+    }, 10);
+  }
+
+  // Check if element is in view
+  function isInView(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+  }
+
+  // Function to handle scrolling
+  function handleScroll() {
+    columns.forEach((column, index) => {
+      const numberElement = numbers[index];
+      if (isInView(column)) {
+        const finalNumber = parseInt(column.dataset.finalNumber);
+        if (parseInt(numberElement.innerText) !== finalNumber) {
+          animateNumber(numberElement, finalNumber, 1000); // 1000ms (1 second) duration for each animation
+        }
+      } else {
+        if (parseInt(numberElement.innerText) !== 0) {
+          animateNumber(numberElement, 0, 1000); // Animate back to 0 when out of view
+        }
+      }
+    });
+  }
+
+  // Initial check for elements in view
+  handleScroll();
+
+  // Event listener for scroll
+  window.addEventListener('scroll', handleScroll);
+});
+
+
+    </script>
+    
+</html>

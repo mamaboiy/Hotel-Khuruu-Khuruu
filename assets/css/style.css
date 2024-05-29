@@ -1,0 +1,465 @@
+  body{
+      background-color: rgb(255, 255, 255);
+      padding-top: 4rem; /* To ensure content doesn't go under the fixed navbar */
+  }
+  
+  #logo{
+      height: 50px;
+      
+      width: 250px;
+  }
+  .navbar {
+    background-color: #BAA383; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  ul.navbar-nav li{
+  font-family: "Faustina", serif;
+  font-weight: 300;
+  font-size: 30px;
+  
+   
+  }
+  ul.navbar-nav li:hover{
+  font-family: "Faustina", serif;
+  font-style: x-large;
+      
+  }
+  .navbar-light .navbar-nav .nav-link   {
+    color: white;
+    font-size:large;
+    
+}
+
+/* navbar css */
+
+/* .btn-warning {
+  color: #212529;
+  background-color: white;
+  border-color: #BAA383;
+} */
+
+.booknow {
+  background-color: white;
+  color:black;
+  border-radius: 5px;
+}
+
+#bgbook{
+  color: #000;
+  /* float: left; */
+}
+
+.btn-custom-book {
+background-color: white;
+border-color: white;
+color: #000; /* Change text color if needed */
+}
+
+  
+#logos{
+    width:5.5rem;
+}
+#logoimg{
+  width:300px;
+  height: 70px;
+  margin-left: 30px;
+}
+
+
+/* subtexts */
+.subtexts{
+ color:white;
+}
+ /* Social media Design */
+ 
+
+.ICON {
+  height: 15px;
+  max-width: 15px;
+} 
+
+/* carousel */
+.carousel-item{
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center center;
+height:70vh;
+position:relative;
+}
+
+
+
+.homeSlide1_img{
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../image/hotelKhuruuKhuru.jpg");
+    background-position: center;
+}
+
+.homeSlide2_img{
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../image/pd.jpeg");
+    background-position: center;
+}
+
+.homeSlide3_img{
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../image/hotel\ room.jpg");
+}
+
+.carousel-caption{
+  bottom:6.25rem;
+}
+
+.carousel-control-next{
+  border: none;
+  background-color: transparent;
+  
+}
+.carousel-control-prev{
+  border: none;
+  background-color: transparent;
+}
+
+/* onmouse over */
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  height:300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-color: transparent;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+  border-radius:5px;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color:#F4F0E9;
+  color: gray;
+  transform: rotateY(180deg);
+  border-radius:5px;
+}
+.turnimage{
+  width: 110%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+ /* Custom CSS */
+
+ /* .index {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/IMG_1885.jpeg');
+  background-size:cover;
+  background-position:center;
+  color: white;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items:last baseline;
+  justify-content: left;
+  font-size: 3.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  padding-left:16%;
+  padding-bottom: 10%;
+  
+} */
+
+.about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/IMG_1871.jpeg');
+  background-size:cover;
+  background-position:center;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  
+  
+}
+
+.event{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/IMG_1915.jpeg');
+  background-size:cover;
+  background-position:center;
+  height: 50vh;
+  width: 10;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.room {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/IMG_1888.jpeg');
+  background-size:cover;
+  background-position:center;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  
+  
+}
+
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/contact.jpeg');
+  background-size:cover;
+  background-position:center;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  
+  
+}
+
+.book {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/IMG_1904.jpeg');
+  background-size:cover;
+  background-position:center;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  
+  
+}
+
+  
+  .btn a{
+    /* background: #ffffff; */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+
+  .headtext{
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 32px;
+    font-weight:400;
+    font-style: normal;
+    color: rgb(156, 110, 77);
+  }
+  .subtext{
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 19px;
+    color: chocolate;
+  }
+  .card-text {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: gray;
+  }
+
+   
+   .card{
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+   
+
+    .card img{
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+ 
+  #icon{
+    width: 35px;
+  }
+
+  .rating{
+      padding: 4px;
+      background-color: #f4f0e9;;
+  }
+  
+  small{
+     float: right;
+  }
+
+  /* aboutus page */
+  .number-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4em; /* Adjust as needed */
+  }
+  
+  .column {
+    text-align: center;
+  }
+  
+  .number {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-size: 16px;
+  }
+ 
+
+/* about us */
+.about-us {
+  text-align: center;
+  margin: 20px 0;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.hotel-representatives {
+  text-align: center;
+  margin: 20px 0;
+}
+.representative-card {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.representative-img {
+  background-color: #e9ecef;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.representative{
+  align-items: center;
+}
+
+.continfo{
+  text-align: left;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* contact */
+.feedback-form {
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+  /* footer */
+  .footer{
+    background-color: #BAA383; /* White background for better contrast */
+    
+    }
+ .nav .nav-link{
+      /* text-decoration: none; */
+      color: #000;
+    }
+
+/* events */
+     cheki
+      .button{
+      text-align: center;
+    }
+
+    .container3 img {
+      width: 100%;
+      height: 250px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    
+   
+     .vevev{
+       text-align: center;
+       margin-bottom: 20px;
+     }
+    
+    .container3 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:end;
+      margin-left: 7vw;
+      margin-right: 7vw;
+    }
+  .card3 {
+      flex: 1 1 250px;
+      box-sizing: border-box;
+      margin: 10px;
+      box-shadow: 2px 3px 6px 3px  rgba(0,0,0,0.1);
+      background-color: #ffffff;
+      text-align: start;
+      margin: 2.5vw;
+      border-radius: 10px;
+   }
+      
+<<<<<<< HEAD
+  
+=======
+  .card img {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+  .card h3 {
+      font-size: 1.5em;
+      margin: 10px 0;
+  }
+  .card p {
+      font-size: 1em;
+      color: #555;
+  }
+  .card-text55 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: gray;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+
+>>>>>>> f2729c3e76f2a3b6f16ea9a9840e71de902b0b8e
+
+  

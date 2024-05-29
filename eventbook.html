@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Khuruu Khuruu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Shippori+Antique&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Antique&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!--==================================================-->
+	<!----- Start repeat navi footer Script----->
+	<!--==================================================-->
+
+	<script src="//code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" >
+		//<!-- start navigation -->
+		$.get("nav.html", function(data){
+			$("#navigation").replaceWith(data);
+		});
+
+		// <!-- start footer -->
+		$.get("footer.html", function(data){
+			$("#footer").replaceWith(data);
+		});
+		
+	</script>
+<!--==================================================-->
+	<!----- Start Navigation Area ----->
+	<!--==================================================-->
+	
+	<div id="navigation"></div>
+
+	<!--==================================================-->
+	<!----- End Navigation Area ----->
+	<!--==================================================-->
+
+<!--banner -->
+<div class="event">
+   <h1 class="headtext" align ="center" style="color: white;">Book an Events <p><span class="subtext" style="color: white;">Your special day is almost here! Book now and make it unforgettable!</span></p></h1>    
+</div>
+    
+<!-- form to book -->
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-body">
+      <form id="event-form">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="first-name">First Name</label>
+            <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="last-name">Last Name</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Gender:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+	  <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+            <label class="form-check-label" for="female">Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Phone Number:</label>
+          <input type="phone number" class="form-control" id="Phone number" placeholder="+975_" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address :</label>
+          <input type="email" class="form-control" id="email" placeholder="Email@gmail.com" required>
+        </div>
+	      <div class="form-group">
+          <label>Event Type:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="eventType" id="anniversary" value="Anniversary Event">
+            <label class="form-check-label" for="anniversary">Family Gethering</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="eventType" id="family" value="Family Event">
+            <label class="form-check-label" for="family">Birthday Celebration</label>
+          </div>
+	   <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="eventType" id="family" value="Family Event">
+            <label class="form-check-label" for="family">Happy Aniversary</label>
+          </div>
+	   <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="eventType" id="family" value="Family Event">
+            <label class="form-check-label" for="family">Happy Wedding</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="eventType" id="other" value="Other events">
+            <label class="form-check-label" for="other">Other events</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="text" class="form-control" id="other-events" placeholder="Type other Events here">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="number-of-people">Number Of People</label>
+          <input type="number" class="form-control" id="number-of-people" min="1" max="35" required>
+        </div>
+        <div class="form-group">
+          <label>Purpose:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="purpose" id="business" value="Business" required>
+            <label class="form-check-label" for="business">Business</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="purpose" id="official" value="Official" required>
+            <label class="form-check-label" for="official">Official</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="purpose" id="vacation" value="Vacation" required>
+            <label class="form-check-label" for="vacation">Vacation</label>
+          </div>
+        </div>
+	      
+        <div class="form-col">
+            <div class="form-group form-row">
+              <label for="date">Date :</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="time"> Starting event at what time:</label>
+            <input type="time" class="form-control" id="time" required>
+          </div>
+	  <div class="form-group col-md-6">
+            <label for="time"> Ending event at what time:</label>
+            <input type="time" class="form-control" id="time" required>
+	  </div>
+       
+        
+      </div>
+      </form>
+      <div class="text-center" align="center">
+        <button type="submit" class="card-text btn btn-warning">Submit</button>
+    </div>
+    </div>
+  </div>
+</div>
+-
+ 
+  <script>
+    document.getElementById('event-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+      const email = document.getElementById('email').value;
+      const numberOfPeople = document.getElementById('number-of-people').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+      const purpose = document.querySelector('input[name="purpose"]:checked').value;
+      
+      const eventTypes = Array.from(document.querySelectorAll('input[name="eventType"]:checked'))
+                              .map(checkbox => checkbox.value);
+      const otherEvents = document.getElementById('other-events').value;
+
+      const message = `Event Booking Details:\n
+        First Name: ${firstName}
+        Last Name: ${lastName}
+        Gender: ${gender}
+        Email: ${email}
+        Number Of People: ${numberOfPeople}
+        Date: ${date}
+        Starting event Time: ${time}
+	Ending event Time: ${time}
+        Purpose: ${purpose}
+        Event Types: ${eventTypes.join(', ')}
+        Other Events: ${otherEvents}
+      `;
+
+      const whatsappURL = `https://wa.me/97517965838?text=${encodeURIComponent(message)}`;
+      window.open(whatsappURL, '_blank');
+    });
+  </script>
+
+	
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></div>
+   </body>
+  <!--==================================================-->
+	<!----- Start Footer Middle Area ----->
+	<!--==================================================-->
+	
+	<div id="footer"></div>
+
+	<!--==================================================-->
+	<!----- End Footer Middle Area ----->
+	<!--==================================================-->
+</html>

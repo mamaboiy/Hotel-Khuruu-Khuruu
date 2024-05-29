@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Khuruu Khuruu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Shippori+Antique&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Antique&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <!--==================================================-->
+	<!----- Start repeat navi footer Script----->
+	<!--==================================================-->
+
+	<script src="//code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" >
+		//<!-- start navigation -->
+		$.get("nav.html", function(data){
+			$("#navigation").replaceWith(data);
+		});
+
+		// <!-- start footer -->
+		$.get("footer.html", function(data){
+			$("#footer").replaceWith(data);
+		});
+		
+	</script>
+<!--==================================================-->
+	<!----- Start Navigation Area ----->
+	<!--==================================================-->
+	
+	<div id="navigation"></div>
+
+	<!--==================================================-->
+	<!----- End Navigation Area ----->
+	<!--==================================================-->
+
+<!--banner -->
+<div class="book">
+  <h1 class="headtext" align="center" style="color: white;">Booking <p><span class="subtext" style="color: white;">"Create Lasting Memories Together"</span></p></h1>
+</div>
+
+<div class="card-text container mt-5 pb-5">
+  <div class="card">
+      <div class="card-body">
+          <form id="booking-form">
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="first-name">First Name</label>
+                      <input type="text" class="form-control" id="first-name" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" class="form-control" id="last-name" placeholder="Last Name" required>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label>Gender:</label><br>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender" id="male" value="male" required>
+                      <label class="form-check-label" for="male">Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="gender" id="female" value="female" required>
+                      <label class="form-check-label" for="female">Female</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email Address :</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                  <label>Room Type:</label><br>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="room-type" id="standard-room" value="Standard Room" required>
+                      <label class="form-check-label" for="standard-room">Standard Room</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="room-type" id="deluxe-room" value="Deluxe Room" required>
+                      <label class="form-check-label" for="deluxe-room">Deluxe Room</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="number-of-rooms">Number Of Rooms:</label>
+                  <input type="number" class="form-control" id="number-of-rooms" min="1" max="10" required>
+              </div>
+              <div class="form-group">
+                  <label>Purpose:</label><br>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="purpose" id="business" value="business" required>
+                      <label class="form-check-label" for="business">Business</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="purpose" id="official" value="official" required>
+                      <label class="form-check-label" for="official">Official</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="purpose" id="vacation" value="vacation" required>
+                      <label class="form-check-label" for="vacation">Vacation</label>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                      <label for="date">Date :</label>
+                      <input type="date" class="form-control" id="date" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                      <label for="time">Time :</label>
+                      <input type="time" class="form-control" id="time" required>
+                  </div>
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="card-text btn btn-warning">Submit</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.getElementById('booking-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const firstName = document.getElementById('first-name').value;
+      const lastName = document.getElementById('last-name').value;
+      const gender = document.querySelector('input[name="gender"]:checked').value;
+      const email = document.getElementById('email').value;
+      const roomType = document.querySelector('input[name="room-type"]:checked').value;
+      const numberOfRooms = document.getElementById('number-of-rooms').value;
+      const purpose = document.querySelector('input[name="purpose"]:checked').value;
+      const date = document.getElementById('date').value;
+      const time = document.getElementById('time').value;
+
+      const message = `Booking Details:\n
+          First Name: ${firstName}\n
+          Last Name: ${lastName}\n
+          Gender: ${gender}\n
+          Email: ${email}\n
+          Room Type: ${roomType}\n
+          Number of Rooms: ${numberOfRooms}\n
+          Purpose: ${purpose}\n
+          Date: ${date}\n
+          Time: ${time}`;
+
+      const whatsappLink = `https://wa.me/97517580367?text=${encodeURIComponent(message)}`;
+      window.open(whatsappLink, '_blank');
+  });
+</script>
+
+   
+
+
+
+
+	
+  
+
+
+
+  <!--==================================================-->
+	<!----- Start Footer Middle Area ----->
+	<!--==================================================-->
+	
+	<div id="footer"></div>
+
+	<!--==================================================-->
+	<!----- End Footer Middle Area ----->
+	<!--==================================================-->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

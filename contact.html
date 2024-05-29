@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Khuruu Khuruu</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Shippori+Antique&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shippori+Antique&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+
+
+<body>
+    <!-- Fixed Navigation -->
+   <!--==================================================-->
+	<!----- Start repeat navi footer Script----->
+	<!--==================================================-->
+
+	<script src="//code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" >
+		//<!-- start navigation -->
+		$.get("nav.html", function(data){
+			$("#navigation").replaceWith(data);
+		});
+
+		// <!-- start footer -->
+		$.get("footer.html", function(data){
+			$("#footer").replaceWith(data);
+		});
+		
+	</script>
+
+
+	<!--==================================================-->
+	<!----- End repeat navi footer Script----->
+	<!--==================================================-->
+
+  <!--==================================================-->
+	<!----- Start Navigation Area ----->
+	<!--==================================================-->
+	
+	<div id="navigation"></div>
+
+	<!--==================================================-->
+	<!----- End Navigation Area ----->
+	<!--==================================================-->
+
+    <!-- Banner -->
+    <div class="contact">
+        <h3 align="center"><span class="headtext" style="color: white;">Contact Us</span><p><span class="subtext" style="color: white;">We are small in size, big in hospitality</span></p></h3>
+    </div>
+
+    <!-- Contact page -->
+     <div class="container mt-5">
+            <div class="row ">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h3 class="subtext" >Find us</h3><hr>
+                    <p class="text-dark"><img src="./assets/icons/location.png" alt="Location" class="ICON"> &nbsp;Drame lam, Khuruthang, Punakha.</p>
+                    <p class="text-dark"><img src="./assets/icons/phone.png" alt="Phone" class="ICON"> &nbsp;+975 17820378</p>
+                    <p class="text-dark"><img src="./assets/icons/mail.png" alt="Email" class="ICON"> <a href="mailto:hotelkhuruu@gmail.com"> &nbsp;hotelkhuruu@gmail.com</a></p>
+                    <p class="text-dark"><img src="./assets/icons/telephone.png" alt="Telephone" class="ICON"> &nbsp; 02 584888</p>
+                    <p class="text-dark"><img src="./assets/icons/facebook-circular-logo.png" alt="Facebook" class="ICON"> &nbsp; Facebook</p>
+                    <p class="text-dark"><img src="./assets/icons/book.png" alt="Booking" class="ICON"> &nbsp; Booking</p>
+                </div>
+                <div class="col-md-6 mb-4 mb-md-0">
+                <h3 class="subtext" >Distance from Khuruthang to our Hotel</h3><hr><br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d442.1699841151151!2d89.87089626945662!3d27.551339647273736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x39e1dd604ae3d2e3%3A0xacad1a00b3ec4d25!2sKhuruthang!3m2!1d27.5517264!2d89.8709748!4m5!1s0x39e1dd988d3ea2d3%3A0xbbc289b9829ec873!2sHotel%20Khuruu%20Khuruu%2C%20Drame%20lam%2C%20Khuruthang!3m2!1d27.5513004!2d89.8711273!5e0!3m2!1sen!2sbt!4v1716805495986!5m2!1sen!2sbt" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+               
+                </div>
+         </div> 
+        
+        <div class="my-4">
+            <hr>
+        </div>
+        <!-- <h2 class="subtext text-center my-5">Your feedback is valuable to us.</h2> -->
+
+        <div class="container mt-5">
+            <h2 class="subtext text-center">Your feedback is valuable to us.</h2>
+            <form id="feedbackForm" class="feedback-form mt-4">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label class="subtext" for="firstName">First name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="subtext" for="lastName">Last name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="subtext">Services</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="fnb" name="services" value="F & B services" required>
+                        <label class="card-text form-check-label" for="fnb">F & B services</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="room" name="services" value="Room services" required>
+                        <label class="card-text form-check-label" for="room">Room services</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" id="business" name="services" value="Business services" required>
+                        <label class="card-text form-check-label" for="business">Business services</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="subtext" for="feedback">Feedback</label>
+                    <textarea class="form-control" id="feedback" name="feedback" rows="4" maxlength="225" required></textarea>
+                    <small class="form-text text-muted">Max 225 characters</small>
+                </div>
+                <div align="center">
+                <button type="submit" class="btn btn-warning" >Submit</button>
+            </div>
+            </form>
+        </div>
+
+        <p class="card-text container text-left mb-5">Thank you for taking the time to share your feedback with us. We appreciate you bringing this to our attention, and we are sorry to hear you were disappointed with your stay. At our hotel, it is our goal to provide a comfortable and convenient experience for every guest.</p>
+        
+        
+
+        <!-- Bootstrap JS and dependencies -->
+        <script>
+            document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+   
+    // Capture form data
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const services = document.querySelector('input[name="services"]:checked').value;
+    const feedback = document.getElementById('feedback').value;
+
+    // Construct the WhatsApp message
+    const message = `Feedback from ${firstName} ${lastName}:\nService: ${services}\nFeedback: ${feedback}`;
+
+    // Encode the message for URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // WhatsApp API URL (Replace 'YOUR_PHONE_NUMBER' with the actual number)
+    const whatsappURL = `https://wa.me/97517580367?text=${encodedMessage}`;
+
+    // Open WhatsApp URL
+    window.open(whatsappURL, '_blank');
+});
+
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+<!--footer-->
+  <!--==================================================-->
+	<!----- Start Footer Middle Area ----->
+	<!--==================================================-->
+	
+	<div id="footer"></div>
+
+	<!--==================================================-->
+	<!----- End Footer Middle Area ----->
+	<!--==================================================-->
+</html>
