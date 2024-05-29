@@ -13,15 +13,16 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   }
   ul.navbar-nav li{
-  font-family: "Faustina", serif;
+  font-family: "poppins", serif;
   font-weight: 300;
   font-size: 30px;
   
    
   }
   ul.navbar-nav li:hover{
-  font-family: "Faustina", serif;
-  font-style: x-large;
+    font-family: "poppins", serif;
+    font-weight: 300;
+    font-size: 30px;
 
   }
   .navbar-light .navbar-nav .nav-link   {
@@ -423,7 +424,7 @@ position:relative;
     }
  .nav .nav-link{
       /* text-decoration: none; */
-      color: #000;
+      color: #ffffff;
     }
 
 /* events */
