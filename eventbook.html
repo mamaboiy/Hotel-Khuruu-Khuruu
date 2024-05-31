@@ -89,32 +89,28 @@
 	      <div class="form-group">
           <label class="subtext">Event Type:</label><br>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="eventType" id="anniversary" value="Anniversary Event">
-            <label class="form-check-label" for="anniversary">Family Gethering</label>
+            <input class="form-check-input" type="radio" name="eventType" id="Family Gethering" value="Event">
+            <label class="form-check-label" for="family gathering">Family Gethering</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="eventType" id="family" value="Family Event">
-            <label class="form-check-label" for="family">Birthday Celebration</label>
+            <input class="form-check-input" type="radio" name="eventType" id="Birthday Celebration" value="Event">
+            <label class="form-check-label" for="Birthday Celebration">Birthday Celebration</label>
           </div>
 	   <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="eventType" id="family" value="Family Event">
-            <label class="form-check-label" for="family">Happy Aniversary</label>
+            <input class="form-check-input" type="radio" name="eventType" id="Happy Aniversary" value="Event">
+            <label class="form-check-label" for="Happy Aniversary">Happy Aniversary</label>
           </div>
 	   <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="eventType" id="family" value="Family Event">
-            <label class="form-check-label" for="family">Happy Wedding</label>
+            <input class="form-check-input" type="radio" name="eventType" id="Happy Wedding" value=Event">
+            <label class="form-check-label" for="Happy Wedding">Happy Wedding</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="eventType" id="other" value="Other events">
-            <label class="form-check-label" for="other">Other events</label>
+            <input class="form-check-input" type="radio" name="eventType" id="Other events" value="events">
+            <label class="form-check-label" for="Other events">Other events</label>
           </div>
           <div class="form-check form-check-inline">
             <input type="text" class="form-control" id="other-events" placeholder="Type other Events here">
           </div>
-        </div>
-        <div class="form-group">
-          <label class="subtext" for="number-of-people">Number Of People</label>
-          <input type="number" class="form-control" id="number-of-people" min="1" max="35" required>
         </div>
         <div class="form-group">
           <label class="subtext">Purpose:</label><br>
@@ -131,21 +127,24 @@
             <label class="form-check-label" for="vacation">Vacation</label>
           </div>
         </div>
-	      
+        <div class="form-group">
+          <label class="subtext" for="number-of-people">Number Of People</label>
+          <input type="number" class="form-control" id="number-of-people" min="1" max="35" required>
+        </div>	      
         <div class="form-col">
             <div class="form-group form-row">
-              <label class="subtext" for="date">Date :</label>
+              <label class="subtext" for="date">Date:</label>
               <input type="date" class="form-control" id="date">
             </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label class="subtext" for="time"> Starting event at what time:</label>
+            <label class="subtext" for="time">Starting event at what time:</label>
             <input type="time" class="form-control" id="time" required>
           </div>
-	  <div class="form-group col-md-6">
-            <label class="subtext" for="time"> Ending event at what time:</label>
+	      <div class="form-group col-md-6">
+            <label class="subtext" for="time">Ending event at what time:</label>
             <input type="time" class="form-control" id="time" required>
-	  </div>
+	      </div>
        
         
       </div>
@@ -181,13 +180,14 @@
         First Name: ${firstName}
         Last Name: ${lastName}
         Gender: ${gender}
+        Phone Number: ${Phone Number}
         Email: ${email}
+        Event Types: ${eventTypes.join(', ')}
+        Purpose: ${purpose}
         Number Of People: ${numberOfPeople}
         Date: ${date}
         Starting event Time: ${time}
-	Ending event Time: ${time}
-        Purpose: ${purpose}
-        Event Types: ${eventTypes.join(', ')}
+	      Ending event Time: ${time}
         Other Events: ${otherEvents}
       `;
 
