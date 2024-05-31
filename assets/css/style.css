@@ -321,8 +321,6 @@ position:relative;
     font-size: 20px;
     font-style: normal;
   }
-
-
    
    .card{
       border-radius: 10px;
@@ -347,11 +345,6 @@ position:relative;
   small{
      float: right;
   }
-
-
-
-
-
 .continfo{
   text-align: left;
 }
