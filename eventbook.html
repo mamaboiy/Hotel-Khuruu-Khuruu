@@ -163,14 +163,15 @@
       const firstName = document.getElementById('first-name').value;
       const lastName = document.getElementById('last-name').value;
       const gender = document.querySelector('input[name="gender"]:checked').value;
+      const Phone Number = document.getElementById('Phone Number').value;
       const email = document.getElementById('email').value;
+      const eventTypes = Array.from(document.querySelectorAll('input[name="eventType"]:checked'))
+                              .map(checkbox => checkbox.value);
+      const purpose = document.querySelector('input[name="purpose"]:checked').value;
       const numberOfPeople = document.getElementById('number-of-people').value;
       const date = document.getElementById('date').value;
       const time = document.getElementById('time').value;
-      const purpose = document.querySelector('input[name="purpose"]:checked').value;
-      
-      const eventTypes = Array.from(document.querySelectorAll('input[name="eventType"]:checked'))
-                              .map(checkbox => checkbox.value);
+
       const otherEvents = document.getElementById('other-events').value;
 
       const message = `Event Booking Details:\n
