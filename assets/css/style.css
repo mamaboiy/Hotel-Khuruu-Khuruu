@@ -288,24 +288,7 @@ position:relative;
     font-weight:300;
     font-style: normal;
   }
-  .subtext1{
-    font-family: "poopins", serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 20px;
-    color:black;
-  }
-
-
-  .subtext{
-    font-family: "poppins", serif;
-    font-optical-sizing: auto;
-    font-weight: 250;
-    font-style: normal;
-    font-size: 20px;
-    color:rgb(0, 0, 0);
-  }
+  
 
 
   .card-text {
