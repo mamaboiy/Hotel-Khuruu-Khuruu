@@ -414,6 +414,12 @@ position:relative;
       margin: 2.5vw;
       border-radius: 10px;
    }
+   .number-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top:4rem;
+   }
 
   
       
