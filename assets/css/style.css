@@ -300,6 +300,9 @@ position:relative;
   #icon{
     width: 35px;
   }
+  .infoicon{
+    width: 1em;
+  }
 
   .rating{
       padding: 4px;
@@ -342,6 +345,8 @@ position:relative;
   width: 25px;
 
   }
+
+  
   
  
 
