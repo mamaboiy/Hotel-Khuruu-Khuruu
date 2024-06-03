@@ -88,7 +88,7 @@ color: #000; /* Change text color if needed */
 }
 
 .homeSlide1_img {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url("../image/IMG-20240423-WA0006.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/home4.jpg");
 }
 
 .homeSlide2_img {
@@ -96,7 +96,7 @@ color: #000; /* Change text color if needed */
 }
 
 .homeSlide3_img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/event.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/eventsbanner.jpg");
 }
 
 .carousel-caption{
@@ -170,7 +170,7 @@ color: #000; /* Change text color if needed */
 
 
 .about {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('../image/about222.jpg');
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../image/aboutus.jpg');
   background-size:cover;
   background-position:center;
   height: 50vh;
@@ -196,7 +196,7 @@ color: #000; /* Change text color if needed */
 }
 
 .room {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/IMG_1888.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/rooms.jpg');
   background-size:cover;
   background-position:center;
   height: 50vh;
@@ -210,7 +210,7 @@ color: #000; /* Change text color if needed */
 }
 
 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/contact.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../image/contactus.jpg');
   background-size:cover;
   background-position:center;
   height: 50vh;
@@ -224,7 +224,7 @@ color: #000; /* Change text color if needed */
 }
 
 .book {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('../image/IMG_1904.jpeg');
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url('../image/booking.jpg');
   background-size:cover;
   background-position:center;
   height: 50vh;
@@ -236,7 +236,7 @@ color: #000; /* Change text color if needed */
 }
 
 .bookingevent {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('../image/IMG_1915.jpeg');
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('../image/IMG_1915.jpeg');
   background-size:cover;
   background-position:center;
   height: 50vh;
