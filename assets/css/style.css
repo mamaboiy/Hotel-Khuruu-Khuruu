@@ -80,31 +80,24 @@ color: #000; /* Change text color if needed */
 } 
 
 /* carousel */
-.carousel-item{
-background-repeat:no-repeat;
-background-size:cover;
-background-position:center center;
-height:70vh;
-position:relative;
+.carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  position: relative;
 }
 
-
-
-.homeSlide1_img{
-    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("../image/hotelKhuruuKhuru.jpg");
-    background-position: center;
+.homeSlide1_img {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url("../image/hotelKhuruuKhuru.jpg");
 }
 
-.homeSlide2_img{
-    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../image/pd.jpeg");
-    background-position: center;
+.homeSlide2_img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../image/pd.jpeg");
 }
 
-.homeSlide3_img{
-    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("../image/hotel\ room.jpg");
+.homeSlide3_img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../image/IMG-20240423-WA0006.jpg");
 }
 
 .carousel-caption{
