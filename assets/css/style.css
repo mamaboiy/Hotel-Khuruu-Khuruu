@@ -115,7 +115,6 @@ color: #000; /* Change text color if needed */
 }
 
 /* onmouse over */
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   margin: 0;
   padding: 0;
@@ -190,7 +189,7 @@ color: #000; /* Change text color if needed */
   background-size:cover;
   background-position:center;
   height: 50vh;
-  /* width: 10; */
+  width: 100%;
   display: flex;
   align-items:center;
   justify-content: center;
